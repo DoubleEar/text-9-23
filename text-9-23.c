@@ -17,61 +17,53 @@
 //	for (j = 0; j < 6; j++)
 //	{
 //		arr1[j] = arr2[j];
-//		printf("arr1[]=%d ", arr1[j]);
+//		printf("%d", arr1[j]);
 //	}
+//	printf("\n");
 //	for (k = 0; k < 6; k++)
 //			{
 //				arr2[k] = arr3[k];
-//				printf("arr2[]=%d ", arr2[k]);
+//				printf("%d", arr2[k]);
 //			}
 //
 //	return 0;
 //}
 
 //计算1/1-1/2+1/3……+1/99-1/100的值
+
 //int main()
 //{
-//	int i = 0;
-//	int j = 1;
-//	int k = 1;
-//	int sum1= 0;
-//	int sum2 = 0;
-//	int ret1 = 0;
-//	int ret2 = 0;
-//	int sum = sum1+sum2;
-//	for (i = 0; i <= 100; i+2)
+//	float sum = 0;
+//	float j = 1;
+//	for (int i = 2; i < 101; i++)
 //	{
-//		j/i == -ret1;
-//		sum1 += ret1;
+//		sum = sum + j;
+//		j = (-j) / i;
 //	}
-//	for (k = -1; k <= 99; k + 2)
-//	{
-//		j / k == ret2;
-//		sum2 += ret2;
-//	}
-//	printf("sum=%d\n ",sum );
+//	printf("%f", sum);
 //	return 0;
 //}
-int main()
-{
-	int i = 0;
-	int j = 1;
-	int k = 1;
-	int sum1 = 0;
-	int sum2 = 0;
-	int ret1 = 0;
-	int ret2 = 0;
-	int sum = sum1 + sum2;
-	for (i = 0; i <= 100; i + 2)
-	{
-		j / i == -ret1;
-		sum1+=ret1;
-	}
-	for (k = -1; k <= 99; k + 2)
-	{
-		j / k == ret2;
-		sum2+=ret2;
-	}
-	printf("sum1=%d\n ", sum1);
+
+//int main()
+//{
+//	int i = 1;
+//    double  sum = 0;
+//	int flag = 1;
+//	for (i = 1; i <= 100; i++)
+//	{
+		//法一
+		/*if (i % 2 != 0)
+		{
+            sum += 1.0 / i;
+		}
+		else
+		{
+			sum -= 1.0 / i;
+		}*/
+		//法二
+		/* sum += (1.0 / i)*flag;
+		 flag = -flag;
+   }
+	printf("sum=%lf\n", sum);
 	return 0;
-}
+}*/
