@@ -51,19 +51,19 @@
 //	int flag = 1;
 //	for (i = 1; i <= 100; i++)
 //	{
-		//法一
-		/*if (i % 2 != 0)
-		{
-            sum += 1.0 / i;
-		}
-		else
-		{
-			sum -= 1.0 / i;
-		}*/
-		//法二
-		/* sum += (1.0 / i)*flag;
-		 flag = -flag;
-   }
-	printf("sum=%lf\n", sum);
-	return 0;
-}*/
+//		法一
+//		if (i % 2 != 0)
+//		{
+//            sum += 1.0 / i;
+//		}
+//		else
+//		{
+//			sum -= 1.0 / i;
+//		}
+//		法二
+//		 sum += (1.0 / i)*flag;
+//		 flag = -flag;
+//   }
+//	printf("sum=%lf\n", sum);
+//	return 0;
+//}
